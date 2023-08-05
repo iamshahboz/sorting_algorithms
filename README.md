@@ -3,6 +3,6 @@
 #### Feel free to use them according to your need
 
 #### Source
-``bash
+```bash
 https://realpython.com/sorting-algorithms-python/
-``
+```
