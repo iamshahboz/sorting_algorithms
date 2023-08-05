@@ -1,4 +1,5 @@
 from typing import List
+from timeit import timeit
 
 def buble_sort(array: List[int])-> List[int]:
     n = len(array)
@@ -31,7 +32,15 @@ def buble_sort(array: List[int])-> List[int]:
 
     return array
 
-print(buble_sort([3, 19, 4, 0, 77, 90, 18, 25, 103]))
+if __name__ == "__main__":
+    input_list = [3, 19, 4, 0, 77, 90, 18, 25, 103]
+
+    execution_time = timeit(stmt=lambda: buble_sort(input_list),number=1)
+
+    print("Sorted List: ",buble_sort(input_list))
+    print("Time taken: ", execution_time, "seconds")
+
+
 
 
 
