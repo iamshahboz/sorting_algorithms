@@ -3,7 +3,6 @@ from typing import List
 from timeit import timeit 
 
 def quicksort(array: List[int])-> List[int]:
-    ...
     # If the input array contains fewer than two elements,
     # then return it as the result of the function
     if len(array) < 2:
