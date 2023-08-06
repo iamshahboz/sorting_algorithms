@@ -43,8 +43,11 @@ def merge(left: List[int], right: List[int]):
 
     return result 
 
-result = (merge([1, 33, 5, 19, 41, 0, 22, 57], [2, 55, 17, 35, 10, 48, 33]))
-execution_time = timeit()
+left_input = [1, 33, 5, 19, 41, 0, 22, 57]
+right_input = [2, 55, 17, 35, 10, 48, 33]
+
+execution_time = timeit(lambda: merge(left_input, right_input), number=1)
+result = merge(left_input, right_input)
 print(f'Sorted list: {result} and the execution time is {execution_time} seconds')
 
 
